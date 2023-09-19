@@ -1,0 +1,57 @@
+h1 {
+    color: #094483; /* 使用十六进制颜色代码，这是蓝色 */
+}
+
+body {
+    margin-top: 60px;    /* 上页边距 */
+    margin-right: 160px;  /* 右页边距 */
+    margin-bottom: 40px; /* 下页边距 */
+    margin-left: 160px;   /* 左页边距 */
+    background-image:"http://tiebapic.baidu.com/forum/w%3D580/sign=1f552684af50352ab16125006342fb1a/86cf7b899e510fb32a825ea49f33c895d1430c6f.jpg?tbpicau=2023-09-18-05_dc37bd6e12dfac59006eba14b7a3d6ed"；
+}
+
+/* 修改 <strong> 元素的样式 */
+strong {
+    font-weight: bold; /* 设置文本加粗 */
+    color: rgb(165,222,228);
+    font-size: 25px; /* 设置文本字体大小 */
+    /* 可以添加其他样式属性，如背景颜色、字体等等 */
+}
+/* 未访问的链接 */
+a:link {
+    color:rgb(87,124,138); 
+}
+
+/* 已访问的链接 */
+a:visited {
+    color: rgb(139,129,195); 
+}
+
+/* 鼠标悬停在链接上时的状态 */
+a:hover {
+    color:rgb(114, 99, 110); 
+}
+
+/* 活动链接，例如点击后的状态 */
+a:active {
+    color:rgb(155,144,194); 
+}
+small{
+    opacity: 0.8;
+}
+.colourtext{
+    font-weight: bold;
+    color:rgb(165,222,228)
+
+}
+.toptext{
+    margin-left: 100px;
+    margin-right: 100px;
+    opacity: 0.6;
+    font-family: "Inconsolata", serif;
+}
+
+
+
+
+
