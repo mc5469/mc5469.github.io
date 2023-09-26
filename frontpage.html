@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap">
+    <link rel="stylesheet" type="text/css" href="G:/23fall/coding4space/starter_code_week_02/format1.css">
+    <title>canychen's main station</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+</head>
+<style>
+     body {
+     background-color:black;
+        }
+        h1 {
+            font-family: 'Homemade Apple', cursive;
+            color: rgb(13, 90, 161); 
+        }
+        h4{
+            color: rgb(165,222,228); 
+        }
+        p{
+            color: white;
+            font-size: 120%;
+    
+        }
+        h5{
+            color: white;
+        }
+           
+</style>
+<body>
+    <div id="animated-element" style="width: 200px; height: 200px; background-color: #007bff;"></div>
+    <script>
+        // 使用GSAP创建动画
+        gsap.to("#animated-element", { duration: 6, x: 600, rotation: 360, repeat: -2, yoyo: true });
+    </script>
+    <br/>
+    <br/>
+    <h1>Welcome to Cany's Website</h1>
+    <h4>Please click the link below to jump to other web pages </h4>
+    <ul>
+        <strong ><li><a href="https://mc5469.github.io/canyasign2.html">HOUSES OR MUSEUMS?</a></li>
+        <li><a href="https://mc5469.github.io/welcomegsapp.html">GSAPP EVENT</a></li>
+        <li><a href="https://mc5469.github.io/canyproposal.html">To be continued</a></li></strong>
+    </ul>
+ 
+</body>
+</html>
