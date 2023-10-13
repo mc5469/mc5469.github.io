@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>mengyao's scatter-plot</title>
+    <link rel="stylesheet" href="formatim.css" >
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<header>
+    <h2>Hi,Everyone! Here is Mengyao's Chart.</h2>
+</header>
+<body>
+    <div class="grid">
+       <figure> <img src="img/immigrantdraft.png">
+        <p>There are a large number of Chinese live overseas, including me.
+         so you can see Chinese people and hear Mandarin all over the world.
+        <br/>So I'm curious which country they are in and how far away they are from China's capital.</p></figure>
+    <figure><img src="img/size.jpg">
+        <br/><p class="cap">Here are some of my initial ideas.</p> </figure>
+
+        <figure>
+        <h3>1.</h3>
+        <img src=img/chinadata.png>
+        <p>So I collect data first, from China's offical governement website. </br>
+            <h5>Say hi to XI XD</h5></p></figure>
+        <figure>
+            <h3>2.</h3>
+            <img width="60%" src=img/data1.png>
+        <p class="cap">Then, I got this.</p>
+        </figure>
+        <figure>
+            <h3>3.</h3>
+            <img src=img/pycharm.png> <p>Use pycharm and google map api to process the data, you will get this</p>
+            <img width="60%" src="img/data2.png">
+        </figure>
+ <figure>
+    <h3>4.</h3>
+    <p>
+        Put it into the D3.</br>
+        In case it doesn't open successfully, here is a sample.
+    </p>
+    <img src="img/sample.png"></figure>
+</div>
+
+<figure >
+    <h2>If you open this successfully, you will see this</h2>
+    <div id="scatter-plot"></div>
+
+</figure >
+    <script>
+        d3.json('immigrantdata.json').then(function(data) {
+            // 计算总人口以确定中心圆的半径
+            var totalPopulation = d3.sum(data, d => d.population);
+
+            // 图表尺寸
+            var width = 1200;
+            var height = 800;
+
+            // 创建SVG元素
+            var svg = d3.select("#scatter-plot")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+           
+            // 创建中心圆
+            svg.append("circle")
+                .attr("cx", 100)
+                .attr("cy", 100)
+                .attr("r", Math.sqrt(totalPopulation))
+                .attr("fill", "Crimson");
+
+            // 创建比例尺
+            var xScale = d3.scaleLinear()
+                .domain([0, d3.max(data, d => d.distance)])
+                .range([0, width/2 ]);
+
+            var yScale = d3.scaleLinear()
+                .domain([0, d3.max(data, d => d.population)])
+                .range([height / 2, 0]);
+
+              
+                svg.selectAll("circle.scatter-point")
+    .data(data)
+    .enter()
+    .append("circle")
+    .attr("class", "scatter-point")
+    .attr("cx", d => (d.distance)*4+200 )
+    .attr("cy", d => xScale(d.distance)+ 10 )
+    .attr("r", d => Math.sqrt(d.population) )
+    .attr("fill", function(d) {
+        if (d.continent === "A") {
+            return "yellow";
+        } else if (d.continent === "S") {
+            return "green";
+        } else if (d.continent === "N") {
+            return "black"; 
+        }
+        else if ((d.continent === "O")) {
+            return "orange";
+        }
+        else if ((d.continent === "F")) {
+            return "black";
+        }
+        else if ((d.continent === "E")) {
+            return "pink";
+        }
+        else {
+            return "purple";
+        }
+    });
+
+
+svg.selectAll("text.label")
+    .data(data)
+    .enter()
+    .append("text")
+    .attr("class", "label")
+    .text(d => {
+        console.log(d["nation_name"]);
+        return d["nation_name"];
+    })
+    .attr("x", d => (d.distance)*4  +200 )
+    .attr("y",  d => xScale(d.distance)+ 10 )
+    .attr("text-anchor", "lmiddle")
+    .attr("dy", +10)
+    .attr("dx", +10)
+    .attr("fill", "black")
+    .attr("font-size", "10px");
+
+        });
+    </script>
+</body>
+</html>
