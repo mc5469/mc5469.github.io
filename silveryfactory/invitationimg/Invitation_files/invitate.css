@@ -1,0 +1,211 @@
+
+h1{
+    font-size: 5em;
+   
+}
+.smalled{
+    font-size: 15px;
+}
+.malled{
+    font-size: 18px;
+}
+.stronged{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.strongedcolor{
+    font-weight: bolder;
+    font-size: 35px;
+    color: #fffb0d;
+}
+.colored{
+    color: #f0ec06;
+    font-weight: bold;
+}
+.footer{
+    font-size: 12px;
+    text-align: right;
+    padding-bottom: 1px;
+}
+p{
+    font-size: 20px;
+    
+}
+a {
+    text-decoration: none; /* 移除默认下划线 */
+    border-bottom: 1px solid yellow; /* 添加下划线效果，设置粗细和颜色 */
+    color: black; /* 设置文本颜色为黑色 */
+  
+  }
+  .youbian{
+    font-size: 15px;
+    text-align: right;
+  }
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+img {
+    width: 20%; /* 设置默认宽度 */
+    height: auto; /* 自动调整高度以保持纵横比 */
+    display: block; /* 将图像设置为块级元素，以确保 text-align 生效 */
+    text-align: center; 
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+  
+    
+}
+.imga{
+    width: 140%;
+}
+body {
+    margin: 20px;
+    text-align: center;
+     /* 设置所有四个边的页边距为20像素 */
+}
+body{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 5%;
+}
+
+.container {
+    text-align: center;
+    width: 60%; /* 容器宽度占满整个屏幕 */
+    max-width: auto; /* 可以根据需要调整容器的最大宽度 */
+    margin: 0 auto; /* 居中对齐容器 */
+    display: flex; /* 使用Flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    border: 2px solid yellow;
+ 
+}
+.left-column {
+    flex: 1; /* 左侧栏占据剩余空间 */
+    padding: 20px; /* 可以根据需要调整内边距 */
+    background-color:  #fffed4; /* 左侧栏的背景颜色 */
+}
+
+.right-column {
+    flex: 1; /* 右侧栏占据剩余空间 */
+    padding: 20px; /* 可以根据需要调整内边距 */
+    background-color: #ffffff; /* 右侧栏的背景颜色 */
+}
+.noting{
+
+    background-size: 80%;
+    border: 2px solid yellow;
+    background-position: center; 
+}
+.menu {
+    background-color: rgba(251, 255, 19, 0.938); /* 菜单栏背景颜色 */
+    color: #ffffff; /* 菜单栏文字颜色 */
+    position: fixed; /* 固定在页面顶部 */
+    top: 0; /* 距离顶部的距离 */
+    left: 0; /* 距离左边的距离 */
+    width: 100%; /* 宽度占满整个屏幕 */
+    height: 65px;
+    padding: 10px 0; /* 内边距，可根据需要调整 */
+    text-align: center; /* 文字居中对齐 */
+    align-items: space-between; 
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* 将菜单项水平排列 */
+    justify-content: space-evenly; /* 居中对齐菜单项 */
+}
+
+.menu li {
+    margin: 0 20px; /* 菜单项之间的间距，可以根据需要调整 */
+    font-size: 1.2em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #bfbfbf; /* 菜单项链接颜色 */
+    white-space: normal;
+}
+
+.content {
+    padding: 30px; /* 可根据需要调整内容区域的内边距，以避免内容被菜单栏遮挡 */
+}
+
+
+
+
+/* 在手机端应用不同的样式 */
+@media (max-width: 767px) {
+    h1{
+        font-size: 2em;
+    }
+    img {
+        width: 100%; /* 设置图片宽度为父元素宽度的100% */
+        height: auto; /* 自动调整高度以保持纵横比 */
+
+        display: block; /* 去除默认行内元素间的间距 */
+    }
+    body{
+        text-align: left;
+    }
+    p{
+        font-size: 17px;
+    }
+    .imga{
+        width:100%;
+        text-align: center;
+    }
+
+    .menu {
+      font-size: 0.6em; /* 在小屏幕上减小字体大小 */
+    }
+    .smalled{
+        font-size: 12px;
+    }
+    .malled{
+        font-size: 13px;
+    }
+    .stronged{
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    .strongedcolor{
+        font-weight: bolder;
+        font-size: 30px;
+        color: #fffb0d;
+    }
+    .colored{
+        color: #f0ec06;
+        font-weight: bold;
+    }
+    .footer{
+        font-size: 8px;
+        text-align: right;
+        padding-bottom: 1px;
+    }
+    .youbian{
+        font-size: 15px;
+        text-align: right;
+      }
+      
+.container {
+    width: 100%; /* 容器宽度占满整个屏幕 */
+    max-width: 1000px; /* 可以根据需要调整容器的最大宽度 */
+    margin: 0 auto; /* 居中对齐容器 */
+    display: flex; /* 使用Flex布局 */}
+    .noting{
+    
+        width: 100%;
+        height: auto;
+        left: 0%;}
+    
+        body{
+            margin-left: 0%;
+            margin-right: 0%;
+            margin-bottom: 10%;
+        }
+    }
+    /*iphone */
