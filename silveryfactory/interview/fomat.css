@@ -1,0 +1,197 @@
+.gridcontainer {
+ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 三列，每列平均分配剩余空间 */
+    grid-gap: 1em; /* 列间距 */
+  }
+  .toptext{
+    margin-top: 8%;
+    font-size: 5em;
+    font-weight: 300;
+  }
+
+  .item {
+    text-align: center;
+    padding: 1em;
+    border: 0.2em solid yellow;
+    font-weight: 1000;
+  }
+.menu {
+    background-color: rgba(251, 255, 19, 0.938); 
+    color: #bfbfbf; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 65px;
+    padding-bottom: 10px 0; 
+    text-align: center; 
+    align-items: space-between; 
+    z-index: 1;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* 将菜单项水平排列 */
+    justify-content: space-evenly; 
+}
+
+.menu li {
+    margin: 0 20px; /* 菜单项之间的间距，可以根据需要调整 */
+    font-size: 1.2em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #bfbfbf; /* 菜单项链接颜色 */
+    white-space: normal;
+}
+.content{
+    padding:30px;
+}
+.question{
+    font-size: 1.5em;
+}
+body{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 5%;
+}
+h2{
+    padding-top: 0.8em;
+    font-size: 0.9em;
+    font-weight: 1000;
+}
+h4{
+    font-weight: 350; 
+}
+.yellowed{color:yellow;
+    background-color: silver;
+    font-weight: 600; }
+.slivered{
+    color:silver;
+    background-color: yellow;}
+ .delete{
+    text-decoration-line: line-through;
+    text-decoration-color: yellow;
+    font-size: 0.9em;
+    text-decoration-thickness: 0.4em;
+
+ }
+.contain-text{
+    padding-left: 60%;
+    font: 0.9em;
+    
+}
+.silvered{
+    color:silver;
+    background-color: yellow;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 0%;
+  
+}
+img{padding: 2%;
+width: 300px;}
+
+.center-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    border: 2px solid yellow;
+    font-size: 0.6em;
+    padding: 1em;
+    width: fit-content;
+    max-width: 100%;
+    z-index: index 2;
+  }
+  .highlight{
+   color: #a5a200;
+     font-size: larger;
+     font-weight: 550;
+  }
+a{
+  
+        text-decoration: underline yellow; /* 设置下划线为黄色 */
+        color: black; /* 设置字体颜色为黑色 */
+        text-decoration-thickness: 0.2em; /* 设置下划线的粗细，可以根据需要调整 */
+        text-underline-offset: 0.25em; /* 调整下划线的位置（可选） */
+     
+}
+.footer{
+    font-size: 1em;
+    text-align: right;
+    }
+    .resized-image {
+        width: 7em;
+        padding-top: 1em;
+     padding-left: 85%;
+      }
+      .frame{
+        max-width: 100%;
+        width: 450em;
+        height: 300em;
+      }
+@media (max-width: 767px) {
+    .center-container {   
+         font-size: 0.5em;
+         padding: 0.6em;
+   
+    }
+    .toptext{
+        padding-top: 20%;
+        font-size: 3em;
+        font-weight: 200;
+       
+      }
+    .gridcontainer {
+    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 三列，每列平均分配剩余空间 */
+        grid-gap: 0.3em; /* 列间距 */
+      }
+      .item {
+        text-align: center;
+        padding: 1em;
+        border: 0.15em solid yellow;
+        font-weight: 1000;
+      }
+    body{
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 10%;
+    }
+img{
+    width: 70%;
+    padding: 2%;
+}
+.menu li {
+    font-size: 0.6em; /* 在小屏幕上减小字体大小 */
+  }
+  h2{
+    padding-top: 0.6em;
+    font-size: 0.8em;
+}
+h4{
+    font-size: 0.7em;
+}
+.resized-image {
+    width: 6em;
+    padding-top: 1em;
+ padding-left: 70%;
+  }
+  .delete{
+    text-decoration-line: line-through;
+    text-decoration-color: yellow;
+    font-size: 7px;
+    text-decoration-thickness: 0.4em;
+
+ }
+.contain-text{
+    padding-left: 55%;
+    font-size: 7px;
+    
+}
+}
