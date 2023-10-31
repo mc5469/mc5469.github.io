@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+
+    overflow: hidden;
+    border-bottom: 3px solid black; 
+    font-size: 20px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.navbar .buttons {
+    float: right;
+}
+
+.navbar .buttons button {
+  
+    color:black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.navbar a:hover {
+    color: #555;
+}
+
+
+.navbar .buttons button:hover {
+    color: #555;
+}
+.context{
+    margin-left: 115.5px;
+    margin-right: 115.5px;
+    margin-top: 60px;
+}
+.grid-container {
+    display: grid;
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;}
+
+figure{
+ width: 15vw;
+}
+    
+    
+    
+  
+  h4{
+    padding-left: 40px;
+    font-size: 20px;
+   margin-bottom: 10px;
+  }
+  h6{
+    padding-left: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    opacity: 0.6;
+  }
+    
+          .footer-menu {
+            background-color: black;
+            text-align: center;
+            padding: 10px 0;
+            height: 200px;
+            margin-top: 30px;
+        }
+
+        .footer-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+      
+        .footer-menu a:hover {
+         opacity: 0.7;
+        }
+        .centered-container{
+        color: white;
+        flex: 1;
+        text-align: center;
+        padding-left: 20.7%;
+        padding-right: 20.7%;
+        }
+        .bigwhite{
+            font-size: 30px;
+            color: white;
+            font-weight: bolder;
+            text-align: left;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .smallwhite{
+            font-size: 12px;
+            color: white;
+            padding-bottom: 0;
+            opacity: 0.8;
+            margin-bottom: 3px;
+            padding-bottom: 2px;
+            text-align: left;
+            border-bottom: 3px solid white; 
+        }
