@@ -1,0 +1,125 @@
+
+.context{
+    padding: 10%;
+    margin:3%
+
+}
+h1 {
+    font-family: 'Tilt Prism', cursive;
+    font-size: 70px;
+    font-weight: bold;
+    color: #0074d9;
+    opacity: 0.8;
+}
+
+h3 {
+    font-size: 24px;
+    color: #555;
+    
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+em {
+    opacity: 0.8;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.important {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #0074d9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.language-button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.footnote {
+    font-size: 10px;
+    opacity: 0.7;
+
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: blink 2s infinite; 
+}
+
+.headera {
+font-size: 40px;
+}
+a {
+    color:#00aed9; 
+ 
+    text-decoration: none;
+}
+
+
+a:hover {
+    color:black ; 
+
+    text-decoration:underline;
+}
+
+
+a:visited {
+    color: #1565a7; 
+ 
+}
+.leand {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+                } 
+.footera{
+    font-size: 15px;
+    color: #333;
+    text-decoration: double;
+}
+figcaption {
+    font-size: 12px;
+    position: relative; 
+    bottom: 0;
+  
+    color: rgb(0, 0, 0);
+    
+    opacity: 0.6; 
+    padding: 5px 10px; 
+}
+img{
+    float: left;
+    margin-right: 25px
+}
+
