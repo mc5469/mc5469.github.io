@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1rem; 
+}
+
+.image-container {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.context {
+    padding: 10%;
+    margin: 3%;
+}
+
+h1 {
+    font-family: 'Tilt Prism', cursive;
+    font-size: 4rem; 
+    font-weight: bold;
+    color: #0074d9;
+    opacity: 0.8;
+    text-align: center;
+    animation: blink 2s infinite;
+}
+
+h3 {
+    font-size: 1.5rem; 
+    color: #555;
+}
+
+p {
+    font-size: 1rem; 
+    color: #555;
+    margin-bottom: 10px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+em {
+    opacity: 0.8;
+    font-size: 1.25rem; 
+    font-style: italic;
+}
+
+.important {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #0074d9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.language-button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 25px;
+}
+
+.footnote {
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.headera {
+    font-size: 40px;
+}
+
+a {
+    color: #00aed9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #1565a7;
+}
+
+.leand {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.footera {
+    font-size: 0.9375rem; 
+    color: #333;
+    text-decoration: double;
+}
+
+figcaption {
+    font-size: 12px;
+    position: relative;
+    bottom: 0;
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.875rem; 
+    }
+
+    .image-container {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    .context {
+        padding: 5vh;
+        margin: 3vh;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+
+    h3 {
+        font-size: 1.125rem; 
+    }
+
+    p {
+        font-size: 0.75rem; 
+    }
+
+    em {
+        font-size: 1rem; 
+    }
+
+    .important {
+        font-size: 1.125rem; 
+    }
+
+    .footera {
+        font-size: 0.625rem; 
+    }
+}
