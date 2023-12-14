@@ -1,0 +1,200 @@
+.slider-container {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  margin-top: 7%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  cursor: pointer; 
+  color: rgb(224, 224, 3);
+
+
+}
+.slide img{ max-width: 60vw;
+height: 40vh;
+filter: sepia(50%)
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.buttoncontainer{
+  position: relative;
+  left:25%;
+  margin-top: 1%;
+  width:50%
+}
+button {
+ 
+  --button_radius: 0.9em;
+  --button_color: white;
+  --button_outline_color:black;
+  font-size: 0.4em;
+  font-weight: bold;
+  border: none;
+
+}
+
+.button_top {
+  position: relative;
+  
+  display: block;
+  box-sizing: border-box;
+  border: 0.4em solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.5em 1em;
+  background:yellow;
+  color: black;
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+.button_top img{
+  max-width: 4em;
+}
+
+button:hover .button_top {
+
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+
+  transform: translateY(0);
+}
+footer {
+  margin-top: 5%;
+  margin-left: 0%;
+  width: fit-content;
+  background-color: black; 
+  color: white; 
+  padding: 0.2em; 
+}
+
+footer a {
+  color: white;
+  text-decoration: none; 
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+footer a:hover {
+  color: yellow; 
+  transform: scale(0.6); 
+}
+
+footer a:active {
+  color: darkred; 
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    position: relative;
+    left: 5%;  
+    width: 90%; 
+    margin-top: 15%; 
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em; 
+    cursor: pointer;
+    color: rgb(224, 224, 3);
+  }
+  
+  .slide img {
+    max-width: 90vw; 
+    height: 30vh; 
+    filter: sepia(50%);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .buttoncontainer {
+    position: relative;
+    left: 5%;
+    margin-top: 3%;
+    width: 90%;
+  }
+  
+  button {
+    --button_radius: 0.4em; 
+    --button_color: white;
+    --button_outline_color: black;
+    font-size: 1em; 
+    font-weight: bold;
+    border: none;
+  }
+  
+  .button_top {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    border: 0.2em solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.2em 0.4em;
+    background: yellow;
+    color: black;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  .button_top img {
+    max-width: 1.4em; 
+  }
+  
+  button:hover .button_top {
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    transform: translateY(0);
+  }
+  
+  footer {
+    margin-top: 5%;
+ 
+    width: fit-content;
+    background-color: black; 
+    color: white; 
+    padding: 0.1em; 
+    font-size: 0.3em;
+  }
+  
+}
+/* by Mengyao Chen 2023/12/14  */

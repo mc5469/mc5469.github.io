@@ -1,0 +1,235 @@
+/* by Mengyao Chen 2023/12/14  */
+.containerheader{
+  
+        width: 98.5vw;
+        height: 10vh;
+
+      
+}
+.pagecontainer2{
+    width: 98.5vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    background-image: linear-gradient(rgba(0, 0, 0, .1) .08em, transparent .1em), linear-gradient(90deg, rgba(0, 0, 0, .08) .07em, transparent .1em);
+    background-size: 2em 2em;
+  
+}
+.simagecontainer{
+    max-height: 4em;
+    max-width: 4em;
+    z-index: 20;
+    filter: grayscale(95%);
+}
+.second-trangle{
+    width: 92%; 
+    height: 85%; 
+    border-top: 2px solid transparent;
+    border-right: 2px solid #000; 
+    border-left:2px solid #000 ;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+
+}
+.president1{
+height: 8%;
+position: relative;
+width: auto;
+width: 4%;
+left: 6.5%;
+top:5%;
+z-index: 22;
+}
+
+.president2{
+    top:82%;
+    left: 28%;
+    height: 8%;
+    width: 4%;
+    position: relative;
+    z-index: 22;
+    }
+.president3{
+    top:82%;
+    left: 56%;
+    height: 8%;
+    position: relative;
+    width: 4%;
+    z-index: 22;   
+        }
+.president4{
+    top:82%;
+    left: 78%;
+    height: 8%;
+    position: relative;
+    width: 4%;
+    z-index: 22;        
+            }
+.president5{
+    top:35%;
+    left: 75%;
+    height: 8%;
+    position: relative;
+    width: 6%;
+    z-index: 22;            
+                }
+.pimg{
+padding-left: 0.5em;
+padding-right: 0.1em;
+padding-top:0.4em;
+max-height: 100%;
+border:0.3em solid yellow ;
+
+}
+.notecontainer{
+    border: 0.2em solid  yellow;
+    box-shadow: -1.25em 1.25em 3.75em #d9d9d9,
+    1.25em -1.25em 3.75em #ffffff;
+}
+.notecontainer p{
+    font-size: 0.7em;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+.notecontainer img {
+    max-width: 50em; 
+    max-height: 35em; 
+    filter: grayscale(30%);
+}
+.hoverit{
+    position:relative;
+    top: 36%;
+    left:-2%;
+    width:60%;
+    height:25%;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2.5em;
+    text-align: center;
+}
+.time1{
+    position: relative;
+    width: 1em;
+    height:1em;
+    left: -78.5%;
+    top:7%;
+    background-color: yellow;
+    z-index: 24;
+}
+.time2{
+    position: relative;
+    width: 1em;
+    height:1em;
+    top:91.5%;
+    left: -52%;
+    z-index: 23;
+    background-color: yellow;
+}
+.time3{
+    position: relative;
+    width: 1em;
+    height:1em;
+    top:91.5%;
+    left: -20%;  
+    background-color: yellow;
+    z-index: 23;
+}
+.time4{
+    position: relative;
+    width: 1em;
+    height:1em;
+    top:91.5%;
+    left: 4%;
+    background-color: yellow;
+    z-index: 23;
+}
+.time5{
+    position: relative;
+    width: 1em;
+    height:1em;
+    top:45%;
+    left: 10%;
+    background-color: yellow;
+    z-index: 23;
+}
+@media screen and (max-width: 600px) {
+
+    .time2{
+        position: relative;
+        width: 1em;
+        height:1em;
+        top:91.5%;
+        left: -60%;
+        z-index: 23;
+        background-color: yellow;
+    }
+    .time3{
+        position: relative;
+        width: 1em;
+        height:1em;
+        top:91.5%;
+        left: -32%;  
+        background-color: yellow;
+        z-index: 23;
+    }
+    .time4{
+        position: relative;
+        width: 1em;
+        height:1em;
+        top:91.5%;
+        left: -10%;
+        background-color: yellow;
+        z-index: 23;
+    }
+    .time5{
+        position: relative;
+        width: 1em;
+        height:1em;
+        left: -3%;
+        top:43%;
+       
+        background-color: yellow;
+        z-index: 23;
+    }
+
+    .notecontainer img {
+        max-width: 8em; 
+        max-height: 10em; 
+        filter: grayscale(30%);
+    }
+    .notecontainer{
+    max-width: 40%;
+  
+}
+    .pimg {
+        padding-left: 0.3em;
+        padding-right: 0.1em;
+        padding-top: 0.2em;
+        max-height: 100%;
+        border: 0.2em solid yellow;
+    }
+
+    .notecontainer p {
+        font-size: 0.5em; 
+    }
+
+    .hoverit {
+        font-size: 1.5em; 
+    }
+    .pagecontainer2{
+        width: 120vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        background-image: linear-gradient(rgba(0, 0, 0, .1) .08em, transparent .1em), linear-gradient(90deg, rgba(0, 0, 0, .08) .07em, transparent .1em);
+        background-size: 1em 1em;}
+      
+}

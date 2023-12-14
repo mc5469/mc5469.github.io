@@ -1,0 +1,222 @@
+
+.loading{
+ 
+  height: 100vh;
+
+}
+.loadingcontainer {
+  padding-top: 40vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100wh; 
+  }
+  .loadingcontainer2 {
+    padding-top: 0;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      width: 100wh; 
+      height: 80px;
+    }
+.square {
+    width: 8em;
+    height: 6em;
+    border: 0.2em solid yellow;
+    position: relative;
+    animation: sqdropdown 1s both;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 4em solid transparent;
+    border-right: 4em solid transparent;
+    border-bottom: 4em solid yellow; 
+    position: absolute;
+    top: -4.15em;
+    left: -0.1em;
+    animation: trdropdown 1s both;
+}  
+@keyframes trdropdown{
+  0%{
+    transform: translateY(-15em);
+    animation-timing-function: ease-in;
+  }  
+  75%{
+    transform: translateY(0em);
+    animation-timing-function: ease-out;
+  }
+  80%{
+    transform: translateY(0.5em);
+    animation-timing-function: ease-in;
+  }
+  100%{
+    transform: translateY(0em);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes sqdropdown{
+  75%{
+    transform: translateY(0em);
+    animation-timing-function: ease-in;
+  }
+  80%{
+    transform: translateY(2em);
+    animation-timing-function: ease-out;
+  }
+  100%{
+    transform: translateY(0em);
+    animation-timing-function: ease-out;
+  }
+}
+.intro1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 48px;
+  color:black; 
+  animation: text-flicker-in-glow 2s linear both;
+}
+
+
+ @keyframes text-flicker-in-glow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  10.1% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  10.2% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  }
+  20.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  85% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  85.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .intro1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 15px;
+    color:black; 
+    animation: text-flicker-in-glow 2s linear both;
+  }
+  
+}
+
+/* by Mengyao Chen 2023/12/14  */
+
+
+
+
+

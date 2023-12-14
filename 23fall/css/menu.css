@@ -1,0 +1,184 @@
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menuimg{
+  max-width: 3em;
+  max-height: 3em;
+}
+
+.navigation
+{
+  position: fixed;
+  top:7%;
+  right:2%;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius:60px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition-delay: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  z-index: 500;
+}
+
+.navigation.active
+{
+  width: 800px;
+}
+
+.navigation .toggleMenu
+{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation.active .toggleMenu
+{
+  background-color:yellow;
+  transition-delay: 0s;
+  transform: translateY(60px);
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .05);
+}
+
+.navigation .toggleMenu::before
+{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #333;
+  transform: translateY(-5px);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.navigation .toggleMenu::after
+{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #333;
+  transform: translateY(5px);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.navigation.active .toggleMenu::before
+{
+  background-color: #000;
+  transform: translateY(0) rotate(45deg) scale(0.6);
+  transition-delay: 0;
+}
+
+.navigation.active .toggleMenu::after
+{
+  background-color: #000;
+  transform: translateY(0) rotate(315deg) scale(0.6);
+  transition-delay: 0;
+}
+
+.navigation li
+{
+  list-style: none;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.navigation.active li
+{
+  transition-delay: 0.75s;
+  display: flex;
+  transform: scale(1);
+}
+
+.navigation li a
+{
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.navigation.active li a:hover
+{
+  background-color: yellow;
+  color: #fff;
+}
+.textcontainer {
+  display: none;
+  position: absolute;
+  background-color:yellow;
+  padding: 8px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  top: -48px;
+  left: -10px;
+}
+
+.navigation.active li:hover .textcontainer {
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  .menuimg{
+    max-width: 2em;
+    max-height: 2em;
+  }
+  .navigation {
+    top: 5%;
+    right: 1%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+
+  .navigation.active {
+    width: 100%; 
+    max-width: 600px; 
+  }
+
+  .navigation .toggleMenu {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navigation.active .toggleMenu {
+    transform: translateY(50px);
+    width: 25px;
+    height: 25px;
+  }
+
+  .navigation li a {
+    font-size: 16px; 
+    padding: 8px 20px; 
+  }
+
+  .textcontainer {
+    top: -60px;
+    left: -20px;
+  }}
+  /* by Mengyao Chen 2023/12/14  */

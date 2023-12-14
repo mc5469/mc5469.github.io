@@ -1,0 +1,119 @@
+body {
+    margin: 0em;
+    padding: 0;
+    overflow-y: scroll;
+}
+.biaoti{
+  font-family: 'Gasoek One', sans-serif;
+  font-size: 60px;
+  padding-top: 40px;
+}
+#follow{
+    height: 5em;
+    width: auto;
+    position: absolute;
+    transition: 0.2s ease-out;
+    z-index: 10;
+}
+#follow img{
+    height: 5em;
+    width: auto;
+    filter: drop-shadow(0 0 0.2em rgb(255,255,0, .8));
+}
+
+#page-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    background-image: linear-gradient(rgba(0, 0, 0, .1) .08em, transparent .1em), linear-gradient(90deg, rgba(0, 0, 0, .08) .07em, transparent .1em);
+    background-size: 2em 2em;
+    display: none;  
+}
+
+ @keyframes roll-out-blurred-left {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-1000px) rotate(-720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+}
+.reload-button{
+    border-radius: 59% 41% 56% 44% / 49% 56% 44% 51% ;
+    width: 6em;
+    height: 6em;
+    background-color:white;
+    border:0.45em solid rgb(255, 255, 0) ;
+    z-index: 999;
+    position: relative;
+}
+.bounce-in-top {
+	animation: bounce-in-top 1.5s both;
+}
+
+ @keyframes bounce-in-top {
+    0% {
+      transform: translateY(0);
+      animation-timing-function: ease-in;
+      filter: blur(4px) grayscale(80%);
+    }
+    33% {
+      transform: translateY(.1em);
+      animation-timing-function: ease-out;
+      filter: blur(2px);
+
+    }
+    50%{
+        transform: translateY(.15em);
+        animation-timing-function: ease-in;
+        filter: blur(0px);
+    }
+
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+      filter: blur(0px);
+      filter: grayscale(0);
+    }
+    }
+ 
+    @media screen and (max-width: 600px) {
+      .biaoti {
+        font-size: 25px; 
+        padding-left: 15px;
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
+
+    #follow, #follow img {
+        height: 3em; 
+    }
+
+      #page-container {
+        width: 120vw;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        background-image: linear-gradient(rgba(0, 0, 0, .1) .08em, transparent .1em), linear-gradient(90deg, rgba(0, 0, 0, .08) .07em, transparent .1em);
+        background-size: 1em 1em;
+        display: none;
+    }
+    .reload-button{
+      border-radius: 59% 41% 56% 44% / 49% 56% 44% 51% ;
+      width: 3em;
+      height: 3em;
+      background-color:white;
+      border:0.45em solid rgb(255, 255, 0) ;
+      z-index: 999;
+      position: relative;
+  }
+  }
+  /* by Mengyao Chen 2023/12/14  */
